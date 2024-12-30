@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    margin: 10px auto;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.menu a {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    border: solid 2px rgb(0, 0, 0);
+    padding: 5px;
+    text-decoration: none;
+    margin: 100px;
+}

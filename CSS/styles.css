@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
@@ -12,6 +18,7 @@ body{
 
 .container{
   padding: 0px 30px ;
+  margin-top: 10px;
 }
 
 ul{
@@ -26,17 +33,6 @@ ul{
 a{
   color: white;
   text-decoration: none;
-}
-
-.center img{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 5px solid #e5b90b;
-}
-
-.center{
-  text-align: center;
 }
 
 footer {
@@ -73,12 +69,70 @@ nav a:hover {
 }
 
 header h1{
-  color: #e5b90b;
-  -webkit-text-stroke: 0.2px #000000; /* Largura e cor do contorno */
+  margin-top: 60px;
+  margin-bottom: 10px;
+  color: #66ff00;
+  -webkit-text-stroke: 0.4px #000000; /* Largura e cor do contorno */
 }
 
 header h2{
   color: white;
-  -webkit-text-stroke: 0.5px #e5b90b; /* Largura e cor do contorno */
+  -webkit-text-stroke: 0.4px #000000; /* Largura e cor do contorno */
 }
 
+hr {
+  margin: 5px 0 5px 0;
+  border: solid 1px rgb(0, 187, 255);
+}
+
+section{
+  margin: 40px 0 40px 0;
+}
+
+section p:hover {
+  background-color: rgba(90, 0, 0, 0.2);
+}
+
+.container-foto {
+  width: 190px;
+  height: 190px;
+  perspective: 1000px;
+  margin: 50px auto;
+}
+
+.foto-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #e5b90b;
+}
+
+.container-foto:hover .foto-flip,
+.foto-flip.girar {
+  transform: rotateY(180deg);
+}
+
+.foto-frente,
+.foto-tras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.foto-tras {
+  transform: rotateY(180deg);
+}
+
+.foto-frente img,
+.foto-tras img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

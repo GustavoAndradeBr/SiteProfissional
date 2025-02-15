@@ -16,12 +16,16 @@ body{
     background-position: center; /* Centraliza a imagem */
   }
 
+#modo{
+  
+}
+
 .container{
   padding: 0px 30px ;
   margin-top: 10px;
 }
 
-ul{
+.menu{
   display: flex;
   justify-content: space-between;
   list-style-type: none;

@@ -15,11 +15,7 @@ body {
 }
 
 .mensagem {
-<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.6);
-=======
-  background-color: rgba(0, 0, 0, 0.6); /* fundo preto transparente */
->>>>>>> c8a1dc9fc2d1a9653a171a92428aa356d47a9384
   padding: 20px 40px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);

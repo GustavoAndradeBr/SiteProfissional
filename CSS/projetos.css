@@ -13,7 +13,6 @@ body {
   font-family: Arial, sans-serif;
   color: white;
 }
-
 .mensagem {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px 40px;
@@ -22,3 +21,4 @@ body {
   font-size: 1.8rem;
   max-width: 90%;
 }
+  

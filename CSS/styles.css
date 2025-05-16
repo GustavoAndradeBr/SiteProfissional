@@ -3,21 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body{
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background: 
-      linear-gradient(rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)), /* Camada de cor transparente */
-      url('../images/rio-1303951_1280.jpg'); /* Imagem de fundo */
-    background-size: cover; /* A imagem cobre o elemento */
-    background-repeat: no-repeat; /* Sem repetição da imagem */
-    background-position: center; /* Centraliza a imagem */
-  }
-
-#modo{
-  
+      linear-gradient(rgba(42, 35, 255, 0), rgba(0, 0, 0, 0.47)),
+      url('../images/Fud.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.5s ease-in-out;
 }
 
 .container{
@@ -34,76 +30,83 @@ body{
   font-family: "Courier New", Courier, monospace;
 }
 
+#button{
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+  border: solid 1.5px #e5b90b;
+  font-size: 13px;
+}
+
+#button:hover {
+  background-color: #e5b90b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.742);
+  transform: scale(1.05);
+}
+
+#button.clicked {
+  background-color: #e5b90b;
+  color: white;
+  transform: scale(1.1);
+}
+
 a{
   color: white;
   text-decoration: none;
 }
-
 footer {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Usando gap para definir espaçamento */
-  padding: 20px 0; /* Espaçamento extra ao redor */
+  gap: 20px;
+  padding: 20px 0;
 }
-
-
 footer a{
   margin: 10px;
   text-align: center;
 }
-
 footer a p{
   margin: 10px;
 }
-
 footer img{
   width: 50px;
   height: 50px;
 }
-
 nav a {
   font-size: 20px;
-  padding: 5px 10px; /* Adiciona espaço em torno do link */
+  padding: 5px 10px;
 }
-
 nav a:hover {
   color: #e5b90b;
-  background-color: rgba(90, 0, 0, 0.2); /* Efeito de fundo no hover */
-  border-radius: 5px; /* Deixa o hover mais suave */
+  background-color: rgba(90, 0, 0, 0.2);
+  border-radius: 5px;
 }
-
 header h1{
   margin-top: 60px;
   margin-bottom: 10px;
   color: #66ff00;
-  -webkit-text-stroke: 0.4px #000000; /* Largura e cor do contorno */
+  -webkit-text-stroke: 0.4px #000000;
 }
-
 header h2{
   color: white;
-  -webkit-text-stroke: 0.4px #000000; /* Largura e cor do contorno */
+  -webkit-text-stroke: 0.4px #000000;
 }
-
 hr {
   margin: 5px 0 5px 0;
   border: solid 1px rgb(0, 187, 255);
 }
-
 section{
   margin: 40px 0 40px 0;
 }
-
 section p:hover {
   background-color: rgba(90, 0, 0, 0.2);
 }
-
 .container-foto {
   width: 190px;
   height: 190px;
   perspective: 1000px;
   margin: 50px auto;
 }
-
 .foto-flip {
   position: relative;
   width: 100%;
@@ -114,12 +117,10 @@ section p:hover {
   border-radius: 50%;
   border: 5px solid #e5b90b;
 }
-
 .container-foto:hover .foto-flip,
 .foto-flip.girar {
   transform: rotateY(180deg);
 }
-
 .foto-frente,
 .foto-tras {
   position: absolute;
@@ -129,14 +130,119 @@ section p:hover {
   border-radius: 50%;
   overflow: hidden;
 }
-
 .foto-tras {
   transform: rotateY(180deg);
 }
-
 .foto-frente img,
 .foto-tras img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 768px) {
+  ul {
+    align-items: center;
+  }
+
+  .container-foto {
+    width: 150px;
+    height: 150px;
+  }
+
+  header h1 {
+    font-size: 24px; 
+    text-align: center; 
+  }
+
+  header h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  section {
+    margin: 20px 0;
+  }
+
+  section p {
+    font-size: 14px;
+  }
+}
+
+.imglist{
+  width: 40px;
+  height: 40px;
+}
+
+.imglist1{
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  
+}
+
+.curso-list{
+  border-radius: 0.4rem;
+  margin: auto;
+  width: 45rem;
+  font-family: "Montserrat";
+  position: relative;
+  overflow: hidden;
+}
+
+.demonstracao{
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+  animation: loop 5s linear infinite;
+}
+
+.cursos{
+  border: solid 1px #e5b90b;
+  display: flex;
+  align-items: center;
+  gap: 0 0.2rem;
+  color: #e5b90b;
+  font-size: 1rem;
+  background-color: #334155;
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 
+    0 0.1rem 0.2rem #00000033,
+    0 0.1rem 0.5rem #00000033,
+    0 0.2rem 1.5rem #00000033;
+}
+
+.cursos1{
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 0 0.2rem;
+  color: #e5b90b;
+  font-size: 1rem;
+  background-color: #334155;
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 
+    0 0.1rem 0.2rem #00000033,
+    0 0.1rem 0.5rem #00000033,
+    0 0.2rem 1.5rem #00000033;
+}
+
+.negritar{
+  position: absolute;
+  background: linear-gradient(90deg,
+  #1e293b, transparent 30%,
+  transparent 70%, #1e293b);
+  inset: 0;
+  pointer-events: none;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }

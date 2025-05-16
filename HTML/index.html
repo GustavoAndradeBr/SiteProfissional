@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-bt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Gustavo Andrade, o melhor funcionario para a sua empresa. Confira meus projetos, formação e cursos.">
+    <meta name="keywords" content="Gustavo Andrade, portfólio, estagiário, desenvolvimento, programação, projetos">
+    <meta name="author" content="Gustavo Andrade">
+    
+    <title>Gustavo Andrade - Portfólio</title>
+    <link rel="shortcut icon" href="/images\favicon_round.png">
     <link rel="stylesheet" href="../CSS/styles.css">
-    <title>Gustavo Andrade</title>
 </head>
+
 <body>
     <div class="container">
         <nav>
@@ -14,10 +21,10 @@
                     <a href="../HTML/index.html">SOBRE MIM</a>
                 </li>
                 <li>
-                    <a href="../HTML/projetos.html">PROJETOS</a>
+                    <a href="../HTML/projetos.html" target="_blank">PROJETOS</a>
                 </li>
                 <li>
-                    <a href="../HTML/contato.html">CONTATOS</a>
+                    <a href="../HTML/contato.html" target="_blank">CONTATOS</a>
                 </li>
             </ul>
         </nav>
@@ -27,16 +34,17 @@
             <div class="container-foto">
                 <div class="foto-flip" onclick="girarFoto(this)">
                   <div class="foto-frente">
-                    <img src="../images/Gato_Souce.jpg" alt="Foto de um gato vestindo roupa da NIKE">
+                    <img src="../images/animeEu.jpg" alt="Eu em estilo anime">
                   </div>
                   <div class="foto-tras">
-                    <img src="../images/fotoMedelin.jpg" alt="Uma foto minha, inclusive sou bem bonito">
+                    <img src="../images/IMG-20241230-WA0005.jpg" alt="Foto minha (2022)">
                   </div>
                 </div>
               </div>
 
             <h1>Gustavo Andrade</h1>
             <h2>O melhor estagiario da sua empresa</h2>
+            <button id="button">WallPaper</button>
         </header>
     
         <main>
@@ -46,7 +54,6 @@
                     Sou apaixonado por tecnologia e desenvolvimento de software.<br> 
                     Gosto de criar soluções práticas e eficientes.
                     Sempre busco otimizar processos e aprender novas ferramentas para melhorar meu trabalho.<br>
-                    Tenho experiência com React, Bootstrap, CSS, JavaScript, Java, C, Python, SQL.<br>
                     <br>Tenho facilidade para aprender rapidamente e me adaptar a novos desafios. Sou organizado, atento aos detalhes e gosto de trabalhar em equipe. 
                     Meu foco é sempre entregar resultados de qualidade.
                 </p>
@@ -55,26 +62,34 @@
             <section>
                 <h3>Formação</h3><hr>
                 <p>
-                    Cursando Cieêcia da Computação - UNIP, atualmente no 4 Semestre. <br>
+                    Cursando Análise e Desenvolvimento de sistemas - UNINTER, atualmente no 2 Semestre. <br>
                     Durante a graduação, tenho me aprofundado em áreas de interesse, como desenvolvimento web, análise de dados, etc.
                 </p>
             </section>
 
             <section>
-                <h3>Cursos</h3> <hr>
-                <ul>
-                    <li>
-                        WebMaster Front-End – Danki-Code (Em andamento)
-                    </li>
-                    
-                    <li>
-                        ReactJs – Danki-Code (2025)
-                    </li>
-                    <li>
-                        JavaScript Completo – Danki-Code (2025)
-                    </li>
-                </ul>
+                <h3 style="text-align: center;">Cursos</h3> <hr>
             </section>
+
+            <div class="curso-list">
+                <div class="demonstracao">
+                    <div class="cursos1"></div>
+                    <div class="cursos"><img class="imglist1" src="..\images\favicon.ico"> .SYSX</div>
+                    <div class="cursos"><img class="imglist" src="..\images\linux-svgrepo-com.svg"> Linux</div>
+                    <div class="cursos"><img class="imglist" src="..\images\css-3-svgrepo-com.svg"> CSS</div>
+                    <div class="cursos"><img class="imglist" src="..\images\js-svgrepo-com.svg"> JavaScript</div>
+                    <div class="cursos"><img class="imglist" src="..\images\python-svgrepo-com.svg"> Python</div>
+                    <div class="cursos"><img class="imglist" src="..\images\c-program-icon.svg"> C</div>
+                    <div class="cursos"><img class="imglist" src="..\images\java-svgrepo-com.svg"> Java</div>
+                    <div class="cursos"><img class="imglist" src="..\images\react-svgrepo-com.svg"> ReactJs</div>
+                    <div class="cursos"><img class="imglist" src="..\images\mysql-logo-svgrepo-com.svg"> MySQL</div>
+                    <div class="cursos"><img class="imglist1" src="..\images\favicon.ico"> .SYSX</div>
+                    <div class="cursos1"></div>
+                </div>
+                <div class="negritar"></div>
+            </div>
+            <br><br><hr>
+            
         </main>
         
         <footer>
@@ -99,4 +114,3 @@
     <script src="../JAVASCRIPT/main.js"></script>
 </body>
 </html>
-
